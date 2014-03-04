@@ -238,7 +238,7 @@ static void usage_exit (const char *name, int status) /* {{{ */
 			"  -D device    outgoing interface name\n"
 			"  -f filename  filename to read hosts from\n"
 
-			"\noping "PACKAGE_VERSION", http://verplant.org/liboping/\n"
+			"\noping  http://verplant.org/liboping/\n"
 			"by Florian octo Forster <octo@verplant.org>\n"
 			"for contributions see `AUTHORS'\n",
 			name);
