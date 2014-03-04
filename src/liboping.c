@@ -25,75 +25,29 @@
 # include <config.h>
 #endif
 
-#if STDC_HEADERS
+
 # include <stdlib.h>
 # include <stdio.h>
 # include <string.h>
 # include <inttypes.h>
 # include <errno.h>
 # include <assert.h>
-#else
-# error "You don't have the standard C99 header files installed"
-#endif /* STDC_HEADERS */
-
-#ifdef HAVE_STDINT_H
 # include <stdint.h>
-#endif
-
-#if HAVE_UNISTD_H
 # include <unistd.h>
-#endif
-
-#if HAVE_FCNTL_H
 # include <fcntl.h>
-#endif
-#if HAVE_SYS_TYPES_H
 # include <sys/types.h>
-#endif
-#if HAVE_SYS_STAT_H
 # include <sys/stat.h>
-#endif
-
-#if TIME_WITH_SYS_TIME
 # include <sys/time.h>
 # include <time.h>
-#else
-# if HAVE_SYS_TIME_H
-#  include <sys/time.h>
-# else
-#  include <time.h>
-# endif
-#endif
-
-#if HAVE_SYS_SOCKET_H
 # include <sys/socket.h>
-#endif
-
-#if HAVE_NETDB_H
 # include <netdb.h>
-#endif
-
-#if HAVE_NETINET_IN_SYSTM_H
 # include <netinet/in_systm.h>
-#endif
-#if HAVE_NETINET_IN_H
 # include <netinet/in.h>
-#endif
-#if HAVE_NETINET_IP_H
 # include <netinet/ip.h>
-#endif
-#if HAVE_NETINET_IP_ICMP_H
 # include <netinet/ip_icmp.h>
-#endif
-#ifdef HAVE_NETINET_IP_VAR_H
 # include <netinet/ip_var.h>
-#endif
-#if HAVE_NETINET_IP6_H
 # include <netinet/ip6.h>
-#endif
-#if HAVE_NETINET_ICMP6_H
 # include <netinet/icmp6.h>
-#endif
 
 #include "oping.h"
 
