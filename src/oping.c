@@ -21,7 +21,6 @@
 # include <config.h>
 #endif
 
-#if STDC_HEADERS
 # include <stdlib.h>
 # include <stdio.h>
 # include <string.h>
@@ -29,50 +28,19 @@
 # include <inttypes.h>
 # include <errno.h>
 # include <assert.h>
-#else
-# error "You don't have the standard C99 header files installed"
-#endif /* STDC_HEADERS */
-
-#if HAVE_UNISTD_H
 # include <unistd.h>
-#endif
-
-#if HAVE_MATH_H
 # include <math.h>
-#endif
-
-#if TIME_WITH_SYS_TIME
 # include <sys/time.h>
 # include <time.h>
-#else
-# if HAVE_SYS_TIME_H
-#  include <sys/time.h>
-# else
-#  include <time.h>
-# endif
-#endif
 
-#if HAVE_SYS_SOCKET_H
 # include <sys/socket.h>
-#endif
-#if HAVE_NETINET_IN_H
 # include <netinet/in.h>
-#endif
-#if HAVE_NETINET_IP_H
 # include <netinet/ip.h>
-#endif
 
-#if HAVE_NETDB_H
 # include <netdb.h> /* NI_MAXHOST */
-#endif
-
-#if HAVE_SIGNAL_H
 # include <signal.h>
-#endif
-
-#if HAVE_SYS_TYPES_H
 #include <sys/types.h>
-#endif
+
 
 #if USE_NCURSES
 # define NCURSES_OPAQUE 1
